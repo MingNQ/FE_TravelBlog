@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +7,19 @@
     <base href="../../">
     <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
     <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <style>
+        .container-card {
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+
+        #category-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            box-shadow: 1px 4px 16px rgba(0, 0, 0, 0.08);
+        }
+    </style>
 </head>
 
 <body>
@@ -22,8 +34,30 @@
             <!--  Header Start -->
             <header id="header" class="app-header"></header>
             <!--  Header End -->
-            <div class="container-fluid">
-                
+            <div class="container-card body-wrapper-inner">
+                <div class="row">
+                    <h5 class="col-10 card-title fw-bolder fs-7 mb-4">Category</h5>
+                    <div class="col-2 d-flex justify-content-end align-items-center mb-4">
+                        <button class="btn btn-primary">
+                            <i class="ti ti-plus"></i>
+                            <span class="ms-2">Add Category</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table id="category-table" class="table align-middle mb-0 w-100 rounded-3">
+                        <thead class="table-light">
+                            <tr>
+                                <th style="width: 5%;">No.</th>
+                                <th>Name</th>
+                                <th style="width: 20%;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="category-table-body">
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -33,10 +67,8 @@
     <script src="assets/libs/apexcharts/dist/apexcharts.min.js"></script>
     <script src="assets/libs/simplebar/dist/simplebar.js"></script>
     <script src="assets/js/admin/scripts.js"></script>
-    <script>
-    </script>
+    <script src="assets/js/admin/category.js"></script>
     <!-- solar icons -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
-
 </html>
